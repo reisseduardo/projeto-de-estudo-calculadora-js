@@ -3,3 +3,6 @@
     color: green;
     font-size: 30px;
 }
+.botoes {
+    display: grid;
+}
