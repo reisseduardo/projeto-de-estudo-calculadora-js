@@ -9,19 +9,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
-    <title>Calculadora by ERS</title>
+       <title>Calculadora by ERS</title>
 </head>
 
 <body>
 
     <h1>Calculadora by ERS</h1>
     <div class="calculadora">
-        <div class="display">0</div>
-        <div class="botoes">
-            <button class="operador" data-action="divide">/</button>
-            <button class="operador" data-action="multiplica">*</button>
-            <button class="operador" data-action="diminui">-</button>
-            <button class="operador" data-action="soma">+</button>
+        <div class="calculadora__display">0</div>
+        <div class="calculadora__botoes">
+            <button class="botao--operador" data-action="soma">+</button>
+            <button class="botao--operador" data-action="diminui">-</button>
+            <button class="botao--operador" data-action="multiplica">*</button>
+            <button class="botao--operador" data-action="divide">/</button>
             <button>7</button>
             <button>8</button>
             <button>9</button>
@@ -34,9 +34,10 @@
             <button>0</button>
             <button data-action="ponto">.</button>
             <button data-action="limpa">C</button>
-            <button class="igual">=</button>
+            <button class="botao--igual" data-action="calcula">=</button>
         </div>
     </div>
+    <script type="text/javascript" src="./script.js"></script>
 </body>
 
 </html>
