@@ -25,6 +25,9 @@ h1 {
 }
 
 .calculadora__display {
+    max-width: 209px;
+    overflow: auto;
+    text-overflow: clip;
     background-color: black;
     margin: 3px;
     color: green;
@@ -32,7 +35,8 @@ h1 {
     text-align: right;
     font-size: 30px;
     padding: 10px;
-    height: 50px;
+    height: 55px;
+    scrollbar-color: dark;
 }
 
 .botao {
