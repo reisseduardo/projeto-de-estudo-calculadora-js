@@ -4,8 +4,18 @@ const botao = document.querySelectorAll('.botao');
 botao.forEach((btn) => {
     btn.addEventListener("click", (e) => {
         const valor = e.target.innerText;
-        if (+valor >= 0 || valor === "." || valor === '+' || valor === '-' || valor === '*' || valor === '/') {
+
+        if (+valor >= 0) {
             insert(valor);
+        }
+        if (valor === "." || valor === '+' || valor === '-' || valor === '*' || valor === '/') {
+            let ultimoDigito = display.innerHTML.slice(-1);
+            if (ultimoDigito === '' || ultimoDigito === '.' || ultimoDigito === '+' || ultimoDigito === '-' || ultimoDigito === '*' || ultimoDigito === '/') {
+                limpar();
+                alert('Use um operador válido!')
+            } else {
+                insert(valor)
+            }
         }
         if (valor === 'C') {
             limpar();
@@ -13,6 +23,7 @@ botao.forEach((btn) => {
         if (valor === '=') {
             calcular(valor);
         }
+
     })
 })
 
@@ -27,7 +38,7 @@ function calcular() {
         display.innerHTML = eval(resultado);
     }
     else {
-        display.innerHTML = "Nada..."
+        display.innerHTML = "VAZIO"
     }
 }
 function limpar() {
