@@ -14,7 +14,7 @@ botao.forEach((btn) => {
                 limpar();
                 alert('Use um operador válido!')
             } else {
-                insert(valor)
+                insert(valor);
             }
         }
         if (valor === 'C') {
@@ -38,7 +38,7 @@ function calcular() {
         display.innerHTML = eval(resultado);
     }
     else {
-        display.innerHTML = "VAZIO"
+        display.innerHTML = "VAZIO";
     }
 }
 function limpar() {
