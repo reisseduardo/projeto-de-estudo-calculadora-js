@@ -35,8 +35,9 @@ botao.forEach((btn) => {
             displayOculto.innerHTML = displayOculto.innerHTML + display.innerHTML;
             calcular(valor);
             display.innerHTML = displayOculto.innerHTML;
+            alert('O resultado é: ' + displayOculto.innerHTML);
+            limpar();
         }
-
     })
 })
 
